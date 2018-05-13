@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+</head>
+<body>
+    <div class="main-bg">
+        <div class="container">
+            <div class="tabs">
+                <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                    <!--选择板块的按钮-->
+                    <ul class="resp-tabs-list">
+                        <li class="resp-tab-item grid1"><span>队伍信息</span></li>
+                        <li class="resp-tab-item grid2"><span>当前任务</span></li>
+                        <li class="resp-tab-item grid3"><span>成员信息</span></li>
+                    </ul>
+                    <!--板块的container-->
+                    <div class="resp-tabs-container">
+                        <!--队伍信息-->
+                        <div class="tab-1 resp-tab-content">
+                            <div class="facts">
+                                <div class="information">
+                                    <div class="info_sec_1">
+                                        <p>队名：aabbccdd队</p>
+                                    </div>
+                                    <div class="info_sec_1">
+                                        <p>成立时间：2018-04-01</p>
+                                    </div>
+                                    <div class="info_sec_1">
+                                        <p>介绍：过铁道时，他先将橘子散放在地上，自己慢慢爬下，再抱起橘子走。到这边时，我赶紧去搀他。他和我走到车上，将橘子一股脑儿放在我的皮大衣上。于是扑扑衣上的泥土，心里很轻松似的。过一会儿说：“我走了，到那边来信！”我望着他走出去。他走了几步，回过头看见我，说：“进去吧，里边没人。”等他的背影混入来来往往的人里，再找不着了，我便进来坐下，我的眼泪又来了。</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--当前任务-->
+                        <div class="tab-1 resp-tab-content">
+                            <div class="facts">
+                                <div class="information">
+                                    <div class="info_sec_1">
+                                        <p>任务名称：完成代码编写</p>
+                                    </div>
+                                    <div class="info_sec_1">
+                                        <p>DDL：2018-06-05</p>
+                                    </div>
+                                    <div class="info_sec_1">
+                                        <p>任务要求：每个人完成自己负责的部分即可</p>
+                                    </div>
+                                    <div class="sign">
+                                        <p>打卡：</p>
+                                        <div class="sign_wrapper">
+
+                                            <p>HWK
+                                            <input type="checkbox" class="checkbox" name="check_1" id="check_1" disabled="disabled" checked="checked"></p>
+
+                                        </div>
+                                        <div class="sign_wrapper">
+                                            <p>LZX
+                                            <input type="checkbox" class="checkbox"  name="check_2" id="check_2" disabled="disabled" checked="checked"></p>
+                                        </div>
+                                        <div class="sign_wrapper">
+                                            <p>ZXH
+                                            <input type="checkbox" class="checkbox"  name="check_3" id="check_3" disabled="disabled" checked="checked"></p>
+                                        </div>
+                                        <div class="sign_wrapper">
+                                            <p>FYZ
+                                            <input type="checkbox" class="checkbox"  name="check_4" id="check_4" disabled="disabled"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--成员信息-->
+                        <div class="tab-1 resp-tab-content">
+                            <div class="facts">
+                                <!--成员个人信息部分-->
+                                <div class="info_member">
+                                    <p>队长：<a href="javascript:void(0)" class="member" id="member_1">kun兄</a></p><hr>
+                                    <p>队员一：<a href="javascript:void(0)" class="member" id="member_2">大师</a></p><hr>
+                                    <p>队员二：<a href="javascript:void(0)" class="member" id="member_3">张兄</a></p><hr>
+                                    <p>队员三：<a href="javascript:void(0)" class="member" id="member_4">方</a></p>
+
+                                </div>
+
+                                <!--成员个人资源部分-->
+                                <div class="member_resource">
+                                    <button id="back">Back</button>
+                                    <!--成员名-->
+                                    <div class="member_name">
+                                        <p id="member_name"></p>
+                                    </div>
+                                    <!--帖子(静态示例)-->
+                                    <div class="resource">
+                                        <div>
+                                            <div class="top_info">
+                                                <p class="task">任务：完成代码</p>
+                                                <p class="time">时间：2018-09-01</p>
+                                            </div>
+                                            <hr class="line">
+                                            <div class="bottom_info">
+                                                <p class="brief">  Python是完全面向对象的语言。函数、模块、数字、字符串都是对象。并且完全支持继承、重载、派生、多继承，有益于增强源代码的复用性。Python支持重载运算符和动态类型。</p>
+                                                <p class="download"><a href="#">下载</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="resource">
+                                        <div>
+                                            <div class="top_info">
+                                                <p class="task">任务：完成代码2</p>
+                                                <p class="time">时间：2018-09-08</p>
+                                            </div>
+                                            <hr class="line">
+                                            <div class="bottom_info">
+                                                <p class="brief">  C++是C语言的继承，它既可以进行C语言的过程化程序设计，又可以进行以抽象数据类型为特点                                                 的基于对象的程序设计，还可以进行以继承和多态为特点的面向对象的程序设计。</p>
+                                                <p class="download"><a href="#">下载</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true   // 100% fit in a container
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.member").click(function () {
+                var id = $(this).attr('id');
+                var name = $(this).text();
+                showRescource(id,name);
+            });
+            $("#back").click(function () {
+                $(".member_resource").hide();
+                $(".info_member").show();
+            })
+        });
+        function showRescource(m_id,m_name) {
+            alert("Selected "+m_id+":  "+m_name);
+            $("#member_name").text(m_name);
+            $(".info_member").hide();
+            $(".member_resource").show();
+        }
+
+    </script>
+</body>
+</html>
