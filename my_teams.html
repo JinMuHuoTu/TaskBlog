@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body>
+<div class="main-bg">
+    <div class="container">
+        <div class="tabs">
+            <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                <!--选择板块的按钮-->
+                <ul class="resp-tabs-list">
+                    <li class="resp-tab-item grid1"><span>选择队伍</span></li>
+                </ul>
+                <!--板块的container-->
+                <div class="resp-tabs-container">
+
+                    <!--当前任务-->
+                    <div class="tab-1 resp-tab-content">
+                        <div>
+                            <div class="teams">
+                               <button onclick="jump('index.html')" class="select_team">Team 1</button>
+                           </div>
+                            <div class="teams">
+                               <button onclick="jump('index.html')" class="select_team">Team 2</button>
+                           </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+<script src="js/easyResponsiveTabs.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+    });
+</script>
+<script>
+    function jump(html) {
+        window.open(html,'_self');
+    }
+</script>
+</body>
+</html>

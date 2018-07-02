@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>
+		your blogs
+	</title>
+</head>
+
+<body>
+<a href="/task_blog/teams/">我的团队</a>
+<a href="/task_blog/logout/">退出博客</a>
+<p>你的名字 ：{{username}}</p>
+<p>博客数量:{{sum_blog }}</p><br>
+<p>写博客</p>
+<form method="POST" action= "/task_blog/publish/" enctype="multipart/form-data">
+		        			<!--文本内容-->
+                            标题<input name = "title" style="width: 49%;height: 30px;font-size: 200%>
+
+                            <input type="hidden" name="type" value=""><br>
+
+
+							描述<textarea name="introduction" style="width: 50%;height: 200px;font-size: 200%">
+
+							</textarea>
+	                        <br>
+							<!--图片上传，用label掩盖opacity: 0-->
+							上传文件或压缩包
+							<input type="file" name="file">
+	                        <br>
+							<input type="submit" value="完成"  >
+
+                            <!--<div>音乐类<input type="radio" name="type" value="音乐类" >&nbsp;&nbsp;&nbsp; 学习类<input type="radio" name="type"  value="学习类" >&nbsp;&nbsp;&nbsp;&nbsp;-->
+                                <!--人际关系类<input type="radio" name="type"  value="人际关系类" >&nbsp;&nbsp;&nbsp;&nbsp;其他<input name="type"  type="radio"  value="其他类"  checked="true" >-->
+                            </div>
+                        </form>
+							<br>
+                        <ul>
+						{% for a in latest_blog_list %}
+						标题: {{a.title}}  <br>
+						介绍:  {{a.introduction}}<br>
+						发布时间: {{a.time_publish}}<br>
+						附件下载：
+						<a href="/task_blog/media/file/{{ a.new_filename }}">{{a.origin_filename}}</a>     <br><br>
+						{% endfor %}
+
+						</ul>
+
+
+
+
+</body>
+</html>

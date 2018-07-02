@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Team Blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="#">Team Blog</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#">My works</a></li>
+								<li><a href="#">Publish</a></li>
+								<li><a href="my_teams.html" target="_self">My teams</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions vertical">
+									<li><a href="#" class="button big fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Deployment Server</a></h2>
+
+										<p>November 1, 2018</p>
+										<p>Attachment:</p>
+									</div>
+
+								</header>
+
+								<p>Server port: set by itself (if not set, randomly generated from 9000-19999).<br>
+									Password: set itself (if not set, defaults to woods.com)</p>
+								<footer>
+									<ul class="actions down">
+										<li><a href="#" class="button small down">Download</a></li>
+									</ul>
+
+								</footer>
+							</article>
+
+
+
+						<!-- Pagination -->
+							<ul class="actions pagination">
+								<li><a href="" class="disabled button big previous">Previous Page</a></li>
+								<li><a href="#" class="button big next">Next Page</a></li>
+							</ul>
+
+						<!--Edit 上传博客-->
+
+						<article class="post">
+
+							<form method="POST" action= "/task_blog/publish/" enctype="multipart/form-data">
+								<!--文本内容-->
+								Title：&nbsp&nbsp<input class="edit_input" name = "title" >
+
+								<input type="hidden" name="type" value=""><br><br>
+
+
+								Description:<br>
+								<textarea name="introduction" class="edit_text">
+
+								</textarea>
+								<br>
+
+
+
+									<ul class="actions up">
+										<li><a href="javascript:;" class="file">UPLOAD
+											<input type="file" name="file"></a>
+										</li>
+
+										<li><a href="javascript:;" class="file">DONE
+											<input type="submit"></a></li>
+									</ul>
+
+
+
+							</form>
+
+						</article>
+
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+							<section id="intro">
+								<a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+								<header>
+									<h2>张兄</h2>
+									<!--{{username}}-->
+									<p>博客数量：99</p>
+									<!--{{sum_blog }}-->
+
+									<p>Woods, a talented man!</p>
+								</header>
+							</section>
+
+
+						<!-- About -->
+							<section class="blurb">
+								<h2>About</h2>
+								<p>Working for Google, the youngest president ever!</p>
+							</section>
+
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
