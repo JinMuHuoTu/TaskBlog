@@ -2,10 +2,11 @@ body{
 
     position:fixed;
     width:100%;
-    height:100%;
     background-size:cover;
     font-family: 'Coda', cursive;
-    overflow: hidden;
+    overflow-y: scroll;
+    background: url(../images/bg.jpg) no-repeat 0px 0px;
+
 }
 body a{
     color: #fff;
@@ -20,14 +21,13 @@ a:hover{
 }
 
 .main-bg{
-    background: url(../images/bg.jpg) no-repeat 0px 0px;
+
 
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    min-height: 1096px;
 
 }
 .tabs{
@@ -97,11 +97,9 @@ ul.resp-tabs-list{
 .facts{
     color: #fff;
     border: none;
-    padding-top: 2em;
-    padding-right: 1em;
-    padding-left: 3em;
-    padding-bottom: 3em;
+    padding: 2em 1em 3em 3em;
     height: 100%;
+
 }
 
 .resp-content-active, .resp-accordion-active {
@@ -133,7 +131,7 @@ input.new_next{
     float: right;
     border: none;
     height: 2.5em;
-    width: 6em;
+    width: 5em;
     background:#87cefa99;
     font-size: 1em;
     border-radius: 6px;
@@ -145,8 +143,12 @@ input.new_task{
     border-width: 0;
     border-bottom: solid #99999955;
     outline: none;
-    width: 25em;
+    width: 80%;
 
+}
+
+.new_info{
+    overflow-y: scroll;
 }
 .teams{
     margin: auto;
@@ -208,7 +210,7 @@ button.select_team{
     display: none;
 }
 
-#back{
+.back{
     border:solid 1px #101010DD;
     width: 60px;
     height: 40px;
@@ -220,7 +222,7 @@ button.select_team{
 
 }
 
-#member_name{
+.member_name{
     text-align: center;
     font-size: 1.5em;
 }
@@ -238,7 +240,7 @@ button.select_team{
 }
 
 .top_info{
-    overflow: hidden;
+    overflow-y: auto;
 
     margin-top: 10px;
     margin-bottom: 0;
@@ -276,4 +278,20 @@ button.select_team{
     margin-bottom: 2px;
     margin-right: 15px;
 }
+.container{
+
+}
+
+.container .is_visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+#allocate_task{
+    display: none;
+}
+#allocate_task .is_selected{
+    display: block;
+}
+
 
