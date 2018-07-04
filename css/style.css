@@ -4,7 +4,6 @@ body{
     width:100%;
     background-size:cover;
     font-family: 'Coda', cursive;
-    overflow-y: scroll;
     background: url(../images/bg.jpg) no-repeat 0px 0px;
 
 }
@@ -22,7 +21,7 @@ a:hover{
 
 .main-bg{
 
-
+    height: inherit;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -32,6 +31,7 @@ a:hover{
 }
 .tabs{
     margin: 7em 0 3em;
+    height: 50em;
 }
 
 div#horizontalTab{
@@ -83,7 +83,6 @@ ul.resp-tabs-list{
     border: none;
     float: none;
     width: 100%;
-    min-height: initial;
     clear: none;
 }
 
@@ -98,8 +97,9 @@ ul.resp-tabs-list{
     color: #fff;
     border: none;
     padding: 2em 1em 3em 3em;
-    height: 100%;
-
+    margin-bottom: 0.8em;
+    height: 32em;
+    overflow-y: auto;
 }
 
 .resp-content-active, .resp-accordion-active {
@@ -294,4 +294,29 @@ button.select_team{
     display: block;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F511;
+}
 
+::-webkit-scrollbar-thumb {
+
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgba(101, 98, 217,200)), color-stop(0.72, rgb(130, 124, 189)), color-stop(0.86, rgb(117, 123, 148)));
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F511;
+
+}
+
+/*简介*/
+.intro {
+    background-color: transparent;
+    resize: none;
+    width: 80%;
+    outline: none;
+    margin-left: 3em;
+    border-color: #99999966;
+    height: 5em;
+}
