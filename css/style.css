@@ -20,15 +20,14 @@ a:hover{
 }
 
 .main-bg{
-
     height: inherit;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-
 }
+
 .tabs{
     margin: 7em 0 3em;
     height: 50em;
@@ -38,6 +37,7 @@ div#horizontalTab{
     width: 70% !important;
     margin: 0 auto !important;
 }
+
 ul.resp-tabs-list{
     list-style: none;
     background: transparent;
@@ -159,9 +159,8 @@ input.new_task{
     margin-top: 1em;
     display: inline-block;
     border-radius: 10px;
-
-
 }
+
 button.select_team{
     background:#87cefaAA;
     border: none;
@@ -319,4 +318,41 @@ button.select_team{
     margin-left: 3em;
     border-color: #99999966;
     height: 5em;
+}
+
+/*提交任务的界面*/
+.submit_task{
+    float: left;
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+
+}
+
+.submit_task input[type='radio']{
+    height: 1em;
+    width: 1em;
+    margin-top: 0.5em;
+}
+.submit_blog{
+
+    float: right;
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+}
+.submit_blog input[type='checkbox']{
+    height: 1em;
+    width: 1em;
+    margin-top: 0.5em;
+}
+.submit_all{
+    float: right;
+    margin-bottom: 0.3em;
+    border: none;
+    height: 2.5em;
+    width: 5em;
+    background:#87cefa99;
+    font-size: 1em;
+    border-radius: 6px;
 }

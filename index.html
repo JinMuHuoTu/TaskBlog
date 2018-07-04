@@ -293,5 +293,31 @@
             window.open(html,'_self');
         }
     </script>
+
+    <script>
+        $(document).ready(function () {
+            var count = 0;
+            $respTabs.find('.resp-tab-item').each(function () {
+                $tabItem = $(this);
+                $tabItem.attr('aria-controls', 'tab_item-' + (count));
+                $tabItem.attr('role', 'tab');
+
+                //想跳转第几个就eq(几)
+                $respTabs.find('.resp-tab-item').eq(1).addClass('resp-tab-active');
+                $respTabs.find('.resp-accordion').eq(1).addClass('resp-tab-active');
+                $respTabs.find('.resp-tab-content').eq(1).addClass('resp-tab-content-active').attr('style', 'display:block');
+
+                //Assigning the 'aria-labelledby' attr to tab-content
+                var tabcount = 0;
+                $respTabs.find('.resp-tab-content').each(function () {
+                    $tabContent = $(this);
+                    $tabContent.attr('aria-labelledby', 'tab_item-' + (tabcount));
+                    tabcount++;
+                });
+                count++;
+            });
+        });
+
+    </script>
 </body>
 </html>

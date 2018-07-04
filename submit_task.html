@@ -2,42 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New Team</title>
+    <title>Submit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/jquery-ui.css">
 </head>
-    <body>
-    <div class="main-bg">
+<body>
+<div class="main-bg">
     <div class="container">
         <div class="tabs">
             <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-                <!--选择板块的按钮-->
+
                 <ul class="resp-tabs-list">
                     <li class="resp-tab-item grid1"><span>创建新队伍</span></li>
                 </ul>
-                <!--板块的container-->
+
                 <div class="resp-tabs-container">
 
-                    <!--当前任务-->
                     <div class="tab-1 resp-tab-content">
                         <div class="facts">
                             <div class="information">
                                 <form method="post" action= "/*TODO*/" enctype="multipart/form-data">
-                                    <div class="new_input">
-                                        团队名:&nbsp&nbsp<input type="text" class="new_task">
+                                    <div class="submit_task">
+                                        <input type="radio" name="task" checked="checked" id="task1" class="task_radio">
+                                        <label for="task1">任务一</label><br>
+                                        <input type="radio" name="task" class="task_radio" id="task2">
+                                        <label for="task2">任务二</label><br>
+                                        <input type="radio" name="task" class="task_radio" id="task3">
+                                        <label for="task3">任务三</label><br>
                                     </div>
-                                    <div class="new_input">
-                                        简介:<br><textarea class="intro"></textarea>
+                                    <div class="submit_blog">
+                                        <input type="checkbox" name="blog1" value="blog1" id="blog1">
+                                        <label for="blog1">博客一</label><br>
+                                        <input type="checkbox" name="blog2" value="blog2" id="blog2">
+                                        <label for="blog2">博客二</label><br>
+                                        <input type="checkbox" name="blog3" value="blog3" id="blog3">
+                                        <label for="blog3">博客三</label><br>
                                     </div>
-                                    <br>
-                                    <div class="new_input">
-                                        成员:&nbsp&nbsp<input type="text" class="new_task">
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <input type="submit" class="new_next" value="完成">
+
+                                    <input type="submit" class="submit_all" value="完成">
                                 </form>
                             </div>
                         </div>
